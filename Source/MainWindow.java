@@ -81,7 +81,7 @@ public class MainWindow extends JFrame implements ActionListener, MouseInputList
 	Timer tSingle;
 	Timer tMulti;
 	Timer tCredits;
-	String username = "";
+	String username = "OpenBoobs";
 	float volume = 100;
 
 	ImageIcon imgBtnSingle = new ImageIcon(getClass().getResource("SinglePlayerButton.png"));
@@ -102,7 +102,7 @@ public class MainWindow extends JFrame implements ActionListener, MouseInputList
 
 	private Sound BoS;
 
-	Font fnt = new Font("Papyrus", Font.PLAIN, 18);
+	Font fnt = new Font("Times New Roman", Font.PLAIN, 18);
 	Font fntSmall = new Font("Papyrus", Font.BOLD, 14);
 
 	public MainWindow()
@@ -142,10 +142,10 @@ public class MainWindow extends JFrame implements ActionListener, MouseInputList
 		tMulti = new Timer(10, windowM);
 		tCredits = new Timer(10, credits);
 
-		backgroundMusic = new Sound(getClass().getResource("roam.wav"));
-		backgroundMusic2 = new Sound(getClass().getResource("sandstorm.wav"));
-		nope = new Sound(getClass().getResource("Nope.wav"));
-		BoS = new Sound(getClass().getResource("BoS.wav"));
+		backgroundMusic = new Sound(getClass().getResource("AreyoufromRussa?.wav"));
+		backgroundMusic2 = new Sound(getClass().getResource("Moldovya?.wav"));
+		nope = new Sound(getClass().getResource("Moldovyaaaaa:).wav"));
+		BoS = new Sound(getClass().getResource("YousoBeautiful.wav"));
 
 		btnAbandonS = new JButton(imgBtnAbandon);
 		btnAbandonS.addActionListener(this);
@@ -249,7 +249,7 @@ public class MainWindow extends JFrame implements ActionListener, MouseInputList
 		slideVolumeFx.setMajorTickSpacing(10);
 		slideVolumeFx.setPaintTicks(true);
 		slideVolumeFx.setBounds(100, 110, 180, 30);
-		lblNameMulti = new JLabel("Online Username:");
+		lblNameMulti = new JLabel("NowPlease:");
 		lblNameMulti.setBounds(80, 150, 150, 20);
 		lblNameMulti.setFont(fntSmall);
 		txtNameMulti = new JTextField("Name...");
@@ -408,7 +408,7 @@ public class MainWindow extends JFrame implements ActionListener, MouseInputList
 		{
 			if(!txtName.getText().isEmpty())
 			{
-				username = txtName.getText();
+				name = txtName.getText();
 				windowS.setUsername(username);
 				txtName.setText("Name...");
 
